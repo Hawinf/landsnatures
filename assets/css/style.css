@@ -1,0 +1,350 @@
+.main-header {
+    background: url('../images/header.jpg');
+    /* background: url(../images/x.jpg); */
+    height: 100vh;
+    background-size: cover;
+}
+.navbar-toggler-icon {
+    border: 1px solid black;
+    border-radius: 6px;
+}
+#label {
+    font-size: 30px;
+    font-weight: 700;
+}
+.content-header {
+    display: flex;
+    justify-content: center;
+    top: 20%;
+    position: relative;
+    color: white
+}
+.header-title {
+    letter-spacing: 7px;
+    font-weight: 700;
+}
+.content-title {
+    display: flex;
+    justify-content: center;
+    top: 20%;
+    position: relative;
+}
+.content-title .connect-title {
+    color: whitesmoke;
+    letter-spacing: 7px;
+    font-weight: 700;
+    font-size: 45px;
+}
+#area-tombol {
+    position: relative;
+    top: 20%;
+}
+#tombol-discover {
+    position: relative;
+    background: #444;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    padding: 1rem 3 rem;
+    transition: 0.2s;
+}
+#tombol-discover:hover {
+    letter-spacing: 0.2rem;
+    padding: .5rem .5rem;
+    /* padding: 1.1rem 3.1rem; */
+    background: var(--cir);
+    color: var(--cir);
+    animation: box 3s infinite;
+}
+#tombol-discover:before {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #272822;
+}
+#tombol-discover span {
+    position: relative;
+    z-index: 1;
+}
+#tombol-discover i {
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+#tombol-discover i::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    left: 80%;
+    top: -2px;
+    border: 2px solid var(--cir);
+    background: #272822;
+    transition: 0.2s;
+}
+#tombol-discover:hover i::before {
+    width: 15px;
+    left: 20%;
+    animation: move 3s infinite;
+}
+#tombol-discover i::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    left: 20%;
+    bottom: -2px;
+    border: 2px solid var(--cir);
+    background: #272822;
+    transition: 0.2s;
+}
+#tombol-discover:hover i::after {
+    width: 15px;
+    left: 80%;
+    animation: move 3s infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes box {
+    0% {
+        box-shadow: #2727c;
+    }
+    50% {
+        box-shadow: 0 0 25px var(--cir);
+    }
+    100% {
+        box-shadow: #27272c;
+    }
+}
+
+/* BREAKPOINT RESPONSIVE */
+@media (max-width: 768px) {
+    .header-title {
+        letter-spacing: 2px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .content-title .connect-title {
+        letter-spacing: 7px;
+        font-weight: 700;
+        font-size: 35px;
+    }
+}
+
+/* START DISCOVER */
+.gambar-discover {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+#image-discover {
+    margin: auto;
+    width: 350px;
+    height: 7px;
+}
+.discover-title {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.discover-name {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+.inti {
+    margin: 20px 20px 80px 20px;
+    
+}
+#carouselExampleCaptions {
+    float: right;
+    margin: 20px;
+}
+.main-inti {
+    margin-top: 50px;
+}
+.main-inti .content-discover-paraf {
+    padding-top: 20px;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+.content-discover-paraf b {
+    font-size: 19px;
+    font-weight: 700;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    #image-discover {
+        margin: auto;
+        width: 200px;
+        height: 4px;
+    }
+    .discover-title {
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+    .discover-name {
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 2px;
+    }
+    .main-inti .content-discover-paraf {
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: .5px;
+    }
+    .content-discover-paraf b {
+        font-size: 15px;
+        font-weight: 600;
+    }
+   
+    
+}
+@media (max-width: 992px) {
+    #carouselExampleCaptions {
+        width: 50%;
+    }
+    .main-inti .content-discover-paraf {
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: .5px;
+    }
+    .content-discover-paraf b {
+        font-size: 17px;
+        font-weight: 600;
+    }
+}
+/* END OF DISCOVER */
+/* START key-features-section */
+.key-features-section {
+    /* background: url(../images/x.jpg); */
+    /* height: 80vh; */
+    /* background: rgb(196, 228, 239); */
+    background: rgb(218, 236, 241);
+    /* background-size: cover; */
+    padding-bottom: 50px;
+}
+.key-features-section .key-features-title {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding-top: 30px;
+    margin-bottom: 70px;
+}
+.key-features-section .main-key-feature {
+    display: flex;
+    text-align: center;
+}
+.main-key-feature .logo-key {
+    margin: 50px 0px
+}
+.main-key-feature .key-feature-value {
+    font-weight: 700;
+}
+.main-key-feature .key-features-desk {
+    font-weight: 500;
+} 
+.main-key-feature .logo-key-features {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+    .main-key-feature .key-feature-value {
+        font-size: 14px;
+    }
+    .main-key-feature .key-features-desk {
+        font-size: 12px;
+        margin: 0 20px;
+    } 
+}
+@media (max-width: 992px) {
+    .key-features-section .key-features-title {
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+}
+/* END OF key-features-section */
+/* START PRODUCT */
+.section-product {
+    padding: 30px 0;
+}
+.section-product .product-title {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+.kotak-product {
+    text-align: center;
+    
+}
+.card {
+    overflow: hidden;
+    margin: 20px;
+    height: 90%;
+}
+.kotak-product .gambar-product {
+    height: 200px;
+}
+.kotak-product .judul-product {
+    margin: 20px 0;
+    font-size: 17px;
+    font-weight: 700;
+}
+.kotak-product .desk-product {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px;
+}
+@media (max-width: 992px) {
+    .section-product .product-title {
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+}
+/* END OF PRODUCT */
+/* START FOOTER */
+.footer {
+    background: rgb(196, 228, 239);
+    padding: 40px 0;
+}
+.footer .address {
+    font-size: 15px;
+    font-weight: 400;
+}
+.footer .menu-dropdown a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    color: black;
+}
+.hak-cipta .copyright {
+    font-weight: 700;
+}
+/* END OF FOOTER */
