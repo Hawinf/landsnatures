@@ -4,6 +4,16 @@
     height: 100vh;
     background-size: cover;
 }
+.main-header img {
+    width: 200px;
+    height: 50px;
+}
+@media (max-width:768px) {
+    .main-header img {
+        width: 150px;
+        height: 30px;
+    }
+}
 .navbar-toggler-icon {
     border: 1px solid black;
     border-radius: 6px;
@@ -346,5 +356,9 @@
 }
 .hak-cipta .copyright {
     font-weight: 700;
+}
+.hak-cipta img {
+    width: 250px;
+    height: 50px;
 }
 /* END OF FOOTER */
